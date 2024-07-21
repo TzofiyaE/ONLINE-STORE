@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles-general.css">
+  <link rel="stylesheet" href="styles-specific.css">
+  <title>MY SHOP</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="LOGO.png" alt="MY SHOP Logo" class="logo-image">
+      </a>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search product">
+      <button id="search-button"><i class="fas fa-search"></i> Search</button>
+    </div>
+    <div class="cart-container">
+      <button id="cart-button" onclick="window.location.href='cart.html'">
+        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+      </button>
+    </div>
+  </header>
+  <nav id="category-menu" class="scrollable-category-menu"></nav>
+  <div class="promo-container">
+    <img src="left-image.jpg" alt="Left Image" class="promo-image" loading="lazy">
+    <video id="promo-video" autoplay loop muted>
+      <source src="video-file.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="right-image.jpg" alt="Right Image" class="promo-image" loading="lazy">
+  </div>
+  <main id="product-list"></main>
+  <section id="special-deals">
+    <h2>Especially for you</h2>
+    <div id="special-products" class="product-container"></div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>INFORMATION AND TERMS OF SERVICE</h4>
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Branch list</a></li>
+          <li><a href="#">Cancelling a transaction</a></li>
+          <li><a href="#">Electronic waste disposal</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Safety instructions</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Transport item policy</a></li>
+          <li><a href="#">Warranty policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>STAY UP TO DATE!</h4>
+        <p>Promotions, coupons and gifts. Register now and we will be in touch!</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email address">
+          <button>REGISTER NOW</button>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Download our app</h4>
+        <div class="app-links">
+          <img src="app-store.png" alt="App Store" loading="lazy">
+          <img src="google-play.png" alt="Google Play" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
